@@ -1,0 +1,2 @@
+module StanpsHelper
+end
