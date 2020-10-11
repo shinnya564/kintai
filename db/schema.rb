@@ -10,10 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_09_093239) do
+ActiveRecord::Schema.define(version: 2020_10_11_041718) do
+
+  create_table "timecard0s", force: :cascade do |t|
+    t.string "attendance"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "timecards", force: :cascade do |t|
-    t.integer "attendance"
+    t.string "attendance"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
